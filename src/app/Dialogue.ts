@@ -143,7 +143,7 @@ export var chatbotMessages: any = {
   "display": {
     "start": [
       new DialogueTurn("bot","How big should the display be?", false, "none", "display"),
-      new DialogueTurn("bot","We have laptops with displays between 10 and 18 inches.", true, "open", "display"),
+      new DialogueTurn("bot","Our laptops have displays between 10 and 18 inches.", true, "open", "display"),
     ],
     "noKeyfacts": [
       [new DialogueTurn("bot","Sorry, can you explain that again?", false, "none", "display"),

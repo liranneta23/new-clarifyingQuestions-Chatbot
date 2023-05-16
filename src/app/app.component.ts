@@ -12,7 +12,7 @@ import { DialogueTurn } from './DialogueTurns';
 export class AppComponent {
   title = 'chatbot';
   page = 1;
-  setting: string | null = 'rephrase'; // 'baseline', 'acknowledge', 'repeat', 'rephrase'
+  setting: string | null = 'repeat'; // 'baseline', 'acknowledge', 'repeat', 'rephrase'
 
   constructor(public http: HttpClient, private router: ActivatedRoute) {
     const queryString = window.location.search;
@@ -22,7 +22,7 @@ export class AppComponent {
     const caseToken = urlParams.get('caseToken');
     if (caseToken != null) { this.sosciCaseToken = urlParams.get('caseToken'); }
     console.log('setting', urlParams.get('setting'));
-    this.setting = urlParams.get('setting') || 'rephrase';
+    this.setting = urlParams.get('setting') || 'repeat';
   }
 
   sosciCaseToken: string | null = 'TESTTEST';
