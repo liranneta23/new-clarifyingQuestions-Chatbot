@@ -283,7 +283,7 @@ export class AppComponent {
 
   goToQuestionnaire():void {
     //this.page = 3;
-    window.location.href = 'https://www.soscisurvey.de/test365404/?q=advanced&i=' + this.sosciCaseToken + '&server=' + this.serverDownCounter;
+    window.location.href = 'https://www.soscisurvey.de/test365404/?q=base-2&i=' + this.sosciCaseToken + '&server=' + this.serverDownCounter;
   }
 
   opencloseScenario(): void {
