@@ -179,7 +179,7 @@ export class AppComponent {
           if (this.setting == 'acknowledge') {
             this.addDialogueTurn(new DialogueTurn("bot", data[this.currentTarget + '_text_autoPositives']['acknowledge'], false, "none", this.currentTarget));
           } else if (this.setting == 'repeat') {
-            this.addDialogueTurn(new DialogueTurn("bot", data[this.currentTarget + '_text_autoPositives']['repeat'], false, "none", this.currentTarget));
+            this.addDialogueTurn(new DialogueTurn("bot", data[this.currentTarget + '_text_autoPositives']['repeat'].replace(':', ''), false, "none", this.currentTarget));
           } else if (this.setting == 'rephrase') {
             this.addDialogueTurn(new DialogueTurn("bot", data[this.currentTarget + '_text_autoPositives']['rephrase'], false, "none", this.currentTarget));
           }
